@@ -1,0 +1,75 @@
+html * {
+    font-family: monospace, sans-serif;
+    color: #333333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px;
+}
+
+section {
+    width: 100%;
+    padding: 10px;
+}
+
+article p.title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+article p.description {
+    font-size: 24px;
+}
+
+article a {
+    padding: 15px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+figure > img {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: inline;
+    }
+    section {
+        margin-top: 10px;
+    }
+
+    article p.title {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    
+    article p.description {
+        font-size: 18px;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}
